@@ -1,4 +1,6 @@
--- CREATE OR REPLACE VIEW public.cohort_analysis AS
+-- DROP VIEW cohort_analysis;
+
+CREATE OR REPLACE VIEW public.cohort_analysis AS
 WITH customer_revenue AS (
          SELECT s.customerkey,
             s.orderdate,
