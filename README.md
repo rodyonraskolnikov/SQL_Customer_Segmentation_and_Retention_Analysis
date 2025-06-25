@@ -10,22 +10,28 @@
 
  # Analysis Approach
 
- ### 1. {insert analysis approach here}
- - {insert analysis approach here}
+ ### 1. Customer Segmentation Anaylsis
 
- Query: [1_query_.sql](sql_1.sql)
+- Categorized customers based on total lifetime value (LTV)
+- Assigned customers to High, Mid, and Low-value segments
+- Calculated key metrics: total revenue
+
+
+ Query: [1_customer_segmentation.sql](1_customer_segmentation.sql)
 
  ## Visualization ##
 
- ![image_name](image_name.png)
+ ![Customer segmentation pie chart](images/6.3_customer_segementation.png)
 
  **Key Findings:**
- - {insert key findings here}
+- High-value segment (25% of customers) drives 66% of revenue ($135.4M)
+- Mid-value segment (50% of customers) generates 32% of revenue ($66.6M)
+- Low-value segment (25% of customers) accounts for 2% of revenue ($4.3M)
 
  **Business Insights**
- - {insert business insights here}
-
- {Repeat for each analysis approach}
+- High-Value (66% revenue): Offer premium membership program to 12,372 VIP customers, as losing one customer significantly impacts revenue
+- Mid-Value (32% revenue): Create upgrade paths through personalized promotions, with potential $66.6M → $135.4M revenue opportunity
+- Low-Value (2% revenue): Design re-engagement campaigns and price-sensitive promotions to increase purchase frequency
 
  ### 2. Cohort Analysis
  - Tracked revenue and customer count per cohorts
