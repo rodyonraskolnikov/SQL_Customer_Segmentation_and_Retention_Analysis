@@ -26,7 +26,11 @@ FROM customer_ltv c,
 )
 SELECT
 	customer_segment,
-	SUM(total_ltv) AS total_ltv
+	SUM(total_ltv) AS total_ltv,
+	COUNT(customerkey) AS customer_count,
+	SUM(total_ltv) / COUNT(customerkey) AS avg_ltv
 FROM segment_values
 GROUP BY
-	customer_segment 
+	customer_segment
+ORDER BY
+	customer_segment DESC
