@@ -60,3 +60,25 @@
  1. {insert strategic recommendations here}
 
  ## Technical Details
+
+  ### 3. Customer Retention
+
+- Identified customers at risk of churning  
+- Analyzed last purchase patterns  
+- Calculated customer-specific metrics
+
+ Query: [3_retention_analysis.sql](3_retention_analysis.sql)
+
+ ## Visualization ##
+
+ ![Customer Churn by Cohort Year](images/7.3_customer_churn_cohort_year.png)
+
+ **Key Findings:**
+- Cohort churn stabilizes at ~90% after 2–3 years, indicating a predictable long-term retention pattern.  
+- Retention rates are consistently low (8–10%) across all cohorts, suggesting retention issues are systemic rather than specific to certain years.  
+- Newer cohorts (2022–2023) show similar churn trajectories, signaling that without intervention, future cohorts will follow the same pattern.
+
+ **Business Insights**
+- Strengthen early engagement strategies to target the first 1–2 years with onboarding incentives, loyalty rewards, and personalized offers to improve long-term retention.  
+- Re-engage high-value churned customers by focusing on targeted win-back campaigns rather than broad retention efforts, as reactivating these users may yield higher ROI.
+- Predict & preempt churn risk and use customer-specific warning indicators to proactively intervene with at-risk users before they lapse.
