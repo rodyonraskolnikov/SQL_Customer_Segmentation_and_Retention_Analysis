@@ -1,4 +1,4 @@
- # SQL_Customer_Segmentation_and_Retention_Analysis
+ # SQL - Customer Segmentation and Retention Analysis
 
  ## Overview
 An in-depth analysis of customer behavior, retention, and lifetime value to enhance retention strategies and drive revenue growth for an e-commerce company.
