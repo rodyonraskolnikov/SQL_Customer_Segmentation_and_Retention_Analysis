@@ -44,17 +44,27 @@ k
 
  ## Visualization ##
 
- ![image_name](image_name.png)
+ Customer Revenue by Cohort (Adjusted for time in market) - First Purchase Date
+
+ ![image_name](images/5.2_customer_revenue_normalized.png)
+
+ Investigate Monthly Revenue & Customer Trends (3 Month Rolling Average)
+
+![image_name](images/5.2_monthly_revenue_customers_3mo.png)
 
  **Key Findings:**
- - **Revenue per customer** shows an alarming decreasing trend over time  
-    - **2022–2024 cohorts** are consistently performing worse than earlier cohorts  
-    - **NOTE:** Although net revenue is increasing, this is likely due to a larger customer base, which is **not reflective of customer value**
+ 
+* Customer revenue is falling — older cohorts (2016–2018) spent over \$2,800, while the 2024 cohort averages only around \$1,970.
+* Both revenue and customer numbers peaked in 2022–2023 but are now declining in 2024.
+* Revenue and customer metrics show high volatility, with steep drops in 2020 and 2024, highlighting persistent retention issues.
 
- **Business Insights**
- - **Value extracted from customers** is decreasing over time and needs further investigation.  
-- In **2023**, we saw a **drop in number of customers acquired**, which is concerning.  
-- With both **lowering LTV** and **decreasing customer acquisition**, the company is facing a **potential revenue decline**.
+
+ **Business Insights:**
+
+* Improve retention and reduce churn by offering personalized incentives to recent cohorts (2022–2024).
+* Address revenue instability by launching loyalty programs or subscriptions to promote consistent customer spending.
+* Analyze cohort behavior and apply effective tactics from high-value cohorts (2016–2018) to newer groups.
+
 
   ### 3. Customer Retention
 
