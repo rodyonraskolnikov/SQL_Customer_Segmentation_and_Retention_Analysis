@@ -30,4 +30,9 @@ SELECT
 	SUM(COUNT(customerkey)) OVER(PARTITION BY cohort_year) AS total_customers,
 	ROUND(COUNT(customerkey) / SUM(COUNT(customerkey)) OVER(), 2) AS status_percentage
 FROM churned_customers
-GROUP BY cohort_year, customer_status
+GROUP BY
+    cohort_year,
+    customer_status
+ORDER BY
+    cohort_year,
+    customer_status;
