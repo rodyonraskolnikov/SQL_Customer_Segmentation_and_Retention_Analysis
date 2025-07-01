@@ -3,6 +3,8 @@
  ## Overview
 An in-depth analysis of customer behavior, retention, and lifetime value to enhance retention strategies and drive revenue growth for an e-commerce company.
 
+Dataset used: Contoso
+
 ## Business Questions
 
 * **Customer Segmentation:** Identifying the most valuable customer groups
