@@ -120,3 +120,10 @@ Dataset used: Contoso
 - **Database:** PostgreSQL  
 - **Analysis Tools:** PostgreSQL, DBeaver
 - **Visualization:** ChatGPT
+
+## Conclusion
+
+This project provided a deep dive into customer behavior using SQL, with a focus on churn, customer segmentation, retention analysis, cohort analysis, and lifetime value (LTV). By leveraging real-world techniques, I was able to extract actionable insights and propose targeted strategies to improve customer retention and maximize revenue across all segments.
+
+A special thanks to [Luke Barousse](https://www.youtube.com/@LukeBarousse) for his high-quality content and guidance throughout the learning process — his approach played a key role in shaping this analysis and helping me apply SQL in a structured, business-focused way.
+
