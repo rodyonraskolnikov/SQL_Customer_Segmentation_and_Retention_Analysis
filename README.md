@@ -75,8 +75,7 @@ An in-depth analysis of customer behavior, retention, and lifetime value to enha
 * Address revenue instability by launching loyalty programs or subscriptions to promote consistent customer spending.
 * Analyze cohort behavior and apply effective tactics from high-value cohorts (2016–2018) to newer groups.
 
-
-  ### 3. Customer Retention
+### 3. Customer Retention
 
 - Flagged customers at high risk of churn
 - Analyzed patterns in last purchase behavior
