@@ -1,21 +1,29 @@
  # Intermediate SQL - Sales Analysis
 
  ## Overview
-Analysis of customer behavior, retention, and lifetime value for an e-commerce company to improve customer retention and maximize revenue.
+An in-depth analysis of customer behavior, retention, and lifetime value to enhance retention strategies and drive revenue growth for an e-commerce company.
 
 ## Business Questions
 
-1. **Customer Segmentation:** Who are our most valuable customers?
-2. **Cohort Analysis:** How do different customer groups generate revenue?
-3. **Retention Analysis:** Which customers haven't purchased recently?
-k
+* **Customer Segmentation:** Identifying the most valuable customer groups
+* **Cohort Analysis:** Understanding how different cohorts contribute to revenue over time
+* **Retention Analysis:** Pinpointing lapsed customers who haven’t made recent purchases
+
+## Cleaning Up Data
+
+ Query: [0_create_view.sql](1_customer_segmentation.sql)
+
+- Aggregated sales and customer data to generate revenue metrics
+- Identified first purchase dates for cohort tracking
+- Created a unified view linking transactions with customer details
+
  # Analysis Approach
 
  ### 1. Customer Segmentation Anaylsis
 
-- Categorized customers based on total lifetime value (LTV)
-- Assigned customers to High, Mid, and Low-value segments
-- Calculated key metrics: total revenue
+- Classified customers by total lifetime value (LTV)
+- Segmented users into High, Mid, and Low-value groups
+- Computed key performance metrics such as total revenue
 
 
  Query: [1_customer_segmentation.sql](1_customer_segmentation.sql)
@@ -25,19 +33,21 @@ k
  ![Customer segmentation pie chart](images/6.3_customer_segementation.png)
 
  **Key Findings:**
-- High-value segment (25% of customers) drives 66% of revenue ($135.4M)
-- Mid-value segment (50% of customers) generates 32% of revenue ($66.6M)
-- Low-value segment (25% of customers) accounts for 2% of revenue ($4.3M)
+
+* High-value segment (25% of customers) contributes 66% of revenue (\$135.4M)
+* Mid-value segment (50% of customers) generates 32% of revenue (\$66.6M)
+* Low-value segment (25% of customers) accounts for just 2% of revenue (\$4.3M)
+
 
  **Business Insights**
-- High-Value (66% revenue): Offer premium membership program to 12,372 VIP customers, as losing one customer significantly impacts revenue
-- Mid-Value (32% revenue): Create upgrade paths through personalized promotions, with potential $66.6M → $135.4M revenue opportunity
-- Low-Value (2% revenue): Design re-engagement campaigns and price-sensitive promotions to increase purchase frequency
+- High-Value (66% of revenue): Offer a premium membership program to 12,372 VIP customers—each loss has a significant revenue impact.
+- Mid-Value (32% of revenue): Implement personalized upgrade paths to move customers upward, tapping into a $66.6M → $135.4M revenue opportunity.
+- Low-Value (2% of revenue): Launch re-engagement and price-sensitive campaigns to drive repeat purchases and lift contribution.
 
  ### 2. Cohort Analysis
- - Tracked revenue and customer count per cohorts
- - Cohorts were grouped by year of first purchase
- - Analyzed customer retention at a cohort level
+- Tracked revenue and customer count across yearly cohorts
+- Grouped customers by their year of first purchase
+- Analyzed revenue contribution at the cohort level
 
  Query: [2_cohort_analysis.sql](/2_cohort_analysis.sql)
 
@@ -68,9 +78,9 @@ k
 
   ### 3. Customer Retention
 
-- Identified customers at risk of churning  
-- Analyzed last purchase patterns  
-- Calculated customer-specific metrics
+- Flagged customers at high risk of churn
+- Analyzed patterns in last purchase behavior
+- Computed customer-level retention and engagement metrics
 
  Query: [3_retention_analysis.sql](3_retention_analysis.sql)
 
@@ -79,31 +89,30 @@ k
  ![Customer Churn by Cohort Year](images/7.3_customer_churn_cohort_year.png)
 
  **Key Findings:**
-- Cohort churn stabilizes at ~90% after 2–3 years, indicating a predictable long-term retention pattern.  
-- Retention rates are consistently low (8–10%) across all cohorts, suggesting retention issues are systemic rather than specific to certain years.  
-- Newer cohorts (2022–2023) show similar churn trajectories, signaling that without intervention, future cohorts will follow the same pattern.
+- Churn stabilizes around 90% after 2–3 years, revealing a consistent long-term retention trend.
+- Persistently low retention (8–10%) across all cohorts points to systemic retention challenges.
+- 2022–2023 cohorts mirror earlier churn patterns, indicating future cohorts are likely to follow suit without targeted intervention.
 
  **Business Insights**
-- Strengthen early engagement strategies to target the first 1–2 years with onboarding incentives, loyalty rewards, and personalized offers to improve long-term retention.  
-- Re-engage high-value churned customers by focusing on targeted win-back campaigns rather than broad retention efforts, as reactivating these users may yield higher ROI.
-- Predict & preempt churn risk and use customer-specific warning indicators to proactively intervene with at-risk users before they lapse.
+- Boost early engagement in the first 1–2 years through onboarding incentives, loyalty rewards, and personalized offers to improve long-term retention.
+- Prioritize win-back campaigns for high-value churned customers, focusing efforts where ROI is highest rather than broad retention tactics.
+- Predict and prevent churn by monitoring customer-specific risk indicators and intervening proactively before users lapse.
 
  ## Strategic Recommendations
 
 1. **Customer Value Optimization** (Customer Segmentation)  
-   - Launch VIP program for 12,372 high-value customers (66% revenue)  
-   - Create personalized upgrade paths for mid-value segment ($66.6M → $135.4M opportunity)  
-   - Design price-sensitive promotions for low-value segment to increase purchase frequency
+   - Launch a VIP program targeting 12,372 high-value customers driving 66% of revenue.
+   - Develop personalized upgrade paths for mid-value customers to unlock a $66.6M → $135.4M revenue opportunity.
+   - Deploy price-sensitive promotions for low-value customers to boost purchase frequency and engagement.
 
 2. **Cohort Performance Strategy** (Customer Revenue by Cohort)  
-   - Target 2022–2024 cohorts with personalized re-engagement offers  
-   - Implement loyalty/subscription programs to stabilize revenue fluctuations  
-   - Apply successful strategies from high-spending 2016–2018 cohorts to newer customers
-
+   - Target 2022–2024 cohorts with personalized re-engagement campaigns to reduce churn.
+   - Introduce loyalty or subscription programs to smooth out revenue volatility.
+   - Replicate effective tactics from high-spending 2016–2018 cohorts to improve newer cohort performance.
 3. **Retention & Churn Prevention** (Customer Retention)  
-   - Strengthen first 1–2 year engagement with onboarding incentives and loyalty rewards  
-   - Focus on targeted win-back campaigns for high-value churned customers  
-   - Implement proactive intervention system for at-risk customers before they lapse
+   - Enhance engagement in the first 1–2 years using onboarding incentives and loyalty rewards.
+   - Run targeted win-back campaigns to recover high-value churned customers with high ROI potential.
+   - Deploy proactive interventions by detecting churn risk early and engaging at-risk users before they lapse.
 
 ## Technical Details
 
