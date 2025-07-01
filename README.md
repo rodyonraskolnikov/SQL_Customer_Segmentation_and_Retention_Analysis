@@ -13,7 +13,7 @@ Dataset used: Contoso
 
 ## Cleaning Up Data
 
- Query: [0_create_view.sql](1_customer_segmentation.sql)
+ Query: [0_create_view.sql](0_create_view.sql)
 
 - Aggregated sales and customer data to generate revenue metrics
 - Identified first purchase dates for cohort tracking
